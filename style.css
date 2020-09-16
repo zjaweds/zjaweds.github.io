@@ -1,0 +1,61 @@
+h2{
+    font-family: consolas;
+}
+p{
+    font-family: consolas;
+}
+
+#ANIMATIONTABLE{
+    background-image: url(AboutImage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
+}
+
+.PYTHON,.SCHEME {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    motion-path: path('m60, 90 a55,55 0 1,1 30,5 Z');
+    offset-path: path('m60, 90 a55,55 0 1,1 30,5 Z');
+    offset-rotate: 0deg;
+    animation: move 12s linear  infinite  ;
+}
+
+.HTML,.REACT {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    motion-path: path('m30,5 a55,55 0 0,1 60, 90 Z');
+    offset-path: path('m30,5 a55,55 0 0,1 60, 90 Z');
+    offset-rotate: 0deg;
+    animation: move 12s linear  infinite  ;
+}
+
+.CSS,.JAVASCRIPT {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    motion-path: path('m60, 90 a55,55 0 1,1 30,5 Z');
+    offset-path: path('m60, 90 a55,55 0 1,1 30,5 Z');
+    offset-rotate: 0deg;
+    animation: move 12s linear  infinite  ;
+}
+.JAVA,.ANGULAR {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    motion-path: path('m30,5 a55,55 0 1,1 60, 90 Z');
+    offset-path: path('m30,5 a55,55 0 1,1 60, 90 Z');
+    offset-rotate: 0deg;
+    animation: move 12s linear  infinite  ;
+}
+      
+@keyframes move {
+    100% { 
+      motion-offset: 100%;
+      offset-distance: 100%;
+    }
+}
+
+
