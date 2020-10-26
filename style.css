@@ -1,3 +1,8 @@
+
+
+
+
+
 body{
     font-family: 'Consolas', Courier, monospace;
 }
@@ -9,7 +14,6 @@ p{
 }
 #AboutTable{
 background-color: #ccccff;
-margin: auto;
 border-bottom-left-radius: 10%;
 border-top-right-radius: 10%;
 border-top-left-radius: 0%;
@@ -20,9 +24,7 @@ border-bottom:#ff9933 5px solid;
 border-right:#004868 5px solid ;
 }
 .INFO{
-    margin: auto;
     height: 100%;
-    transform: translateY(28%);
     position: relative;
     text-align: justify;
 }
