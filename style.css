@@ -18,10 +18,10 @@ p{
     border-top-right-radius: 0%;
     border-top-left-radius: 10%;
     border-bottom-right-radius: 10%;
-    border-left: #006299 5px solid;
-    border-top: #d37622 5px solid;
-    border-bottom:#ff9933 5px solid;
-    border-right:#004868 5px solid ;
+    border-left: #d37622  5px solid;
+    border-top:  #006299 5px solid;
+    border-bottom:#004868 5px solid;
+    border-right:#ff9933 5px solid ;
 }
 #AboutTable{
     background-color: #ccccff;
