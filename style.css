@@ -12,16 +12,27 @@ h2{
 p{
     font-family: consolas;
 }
+#WRAP{
+    background-color: #3f3e47cb;
+    border-bottom-left-radius: 0%;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-left: #006299 5px solid;
+    border-top: #d37622 5px solid;
+    border-bottom:#ff9933 5px solid;
+    border-right:#004868 5px solid ;
+}
 #AboutTable{
-background-color: #ccccff;
-border-bottom-left-radius: 10%;
-border-top-right-radius: 10%;
-border-top-left-radius: 0%;
-border-bottom-right-radius: 0%;
-border-left: #006299 5px solid;
-border-top: #d37622 5px solid;
-border-bottom:#ff9933 5px solid;
-border-right:#004868 5px solid ;
+    background-color: #ccccff;
+    border-bottom-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border-left: #006299 5px solid;
+    border-top: #d37622 5px solid;
+    border-bottom:#ff9933 5px solid;
+    border-right:#004868 5px solid ;
 }
 .INFO{
     height: 100%;
