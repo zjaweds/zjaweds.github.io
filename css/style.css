@@ -112,4 +112,16 @@ p{
     margin-left: 40%;
     padding-left: 100%;
     float: right;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    border-color: black;
+    border-width: 2px;
+}
+.Jawed{
+    background-image: url(images/jawed.jpg);
+    background-repeat: no-repeat;
+    height: 30%;
+    width: 30%;
 }
