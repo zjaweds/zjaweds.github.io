@@ -43,7 +43,7 @@ p{
     position: relative;
 }
 #ANIMATIONTABLE{
-    background-image: url(AboutImage.png);
+    background-image: url(images/AboutImage.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60% 60%;
