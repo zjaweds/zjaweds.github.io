@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Errors in Competitive Coding
+        </title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    <div class="conte" style="width: 80%;font-size: larger; align-content: center;margin-left: 10%;">
+    <h1>Errors in Competitive Coding</h1>
+    <p>
+        In Competitive coding , participants write source code to solve a well defined problem. The fundamental purpose of these codes is to solve specific problems optimally. So to prepare the participants for the purpose, online platforms provide well defined problems with certain time and memory constraints and participants need to write source code that passes all the testcases and time and memory used are calculated for each of the test cases and then compared with the allowed limits. These values determine whether a program is optimal or not.
+       
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Because of these specified specific limits on time and memory, some other errors might appear into the scene, besides the errors in a programming language. In this article, we are trying to elaborate general errors that are commonly faced by competitive programmers.
+        </p>
+        <li><b>Run TimeError:</b>
+            <ul>
+            <p>
+                 This error has nothing to do with your code; it often occurs due to lost connection between your system and the server of the platform where you have submitted the source code. Check your connectivity and you are good to go if the problem is at your end otherwise it will be taken care of by the host, which may be the rarest of the rare case.
+            </p>
+        </ul>
+        </li>
+        <div class="images">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img  src="images/runtime-error.png">
+        </div>
+        <br>
+        <li><b>TLE: Time Limit Exceeded</b>
+            <ul>
+            <p>
+                It occurs when your code does not execute all the test cases in the time constraint specified in the problem. It needs logical thinking and analysis of the algorithm being used. It seeks optimization of the algorithm. Time complexity has a crucial role in programming. Reduction of the time is the most important challenge and it is one of the core purposes of competitive coding. 
+                </p>
+        </ul>
+        </li>
+        <div class="images">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img  src="images/tle-error.png">
+        </div>
+        <br>
+        <li><b>SIGSEGV: Signal Segmentation Violation</b>
+            <ul>
+            <p>
+
+                
+It is a signal from the process to the OS. This error occurs when your program tries to access read only memory or the part of the memory which you are not allowed to use.
+Accessing the variable undeclared in the current scope
+<ol>
+<li>
+    Use of uninitialised pointers
+</li>
+<li>
+    Stackoverflow due to non terminating recursion.    
+</li>
+<li>
+    Dereferencing Null Pointer    
+</li>
+<li>
+    Manipulation of string literals    
+</li>
+
+</ol><br>
+
+<div class="code" style="width: 100%;float:center;">
+    <div style="width: 50%;float:left;"> </div>
+        void rec_func(){<br>
+        int q = 5;<br>
+        rec_func();<br>
+        }<br>
+        int main(){<br>
+        rec_func();<br>
+        }<br><br>
+</div>
+This small code keeps on calling rec_func() without any termination, so it will cause stack overflow and finally it will be aborted by the operating system.
+</p>
+        </ul>
+        </li>
+        <div class="images">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img  src="images/sigsegv.png">
+        </div>
+<br>
+        <li><b>SIGABRT: Signal Abort</b>
+            <ul>
+            <p>
+It is a signal sent by the process to the operating system in case of some serious issue which may lead to fatality of the OS. It calls abort() and forcibly terminates the execution of the program. It occurs in competitive coding due to problems in memory allocations due to internal error or due to violation of some constraints which may cause damage to the system.
+<div class="code" style="width: 100%;float:center;">
+    <div style="width: 50%;float:left;"> </div>
+    // C++ program to illustrate<br> 
+    // the SIGABRT error <br>
+    int a = 100000000000;<br>
+          
+</div>
+<br>
+Assigning a value which occupies memory beyond the capacity of an int variable in c++.
+            
+</p>
+        </ul>
+        </li>
+        <div class="images">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img  src="images/sigabrt.png">
+        </div>
+        <br>
+       <li><b>SIGFPE: Signal Floating Point Exception</b>
+            <ul>
+            <p>
+                
+It is caused by all arithmetic errors that may cause fatality like division of a floating point number by zero, modulo operation by zero and integer overflow. If a program stores integer data in a location which is then used in a floating-point operation, this often causes an “invalid operation” exception, because the processor cannot recognize the data as a floating-point number.
+<div class="code">
+		int a = 5;<br>
+    		// Division by Zero<br>
+     cout << a / 0;<br>
+
+
+</div>
+ <br>
+Overflow: It is caused when a value which is out of range for the variable at the left hand side of the assignment operator is assigned as a result of arithmetic operation.
+<div class="code">
+    <br>			int x=10;<br>
+			int y;<br>
+			y = pow(x,11);<br>
+
+</div>
+<br>
+Above statement is trying to assign 100000000000 to an int variable y which is beyond its capacity. It doesn’t always lead to that error but it will give an unusual output.
+
+            </p>
+        </ul>
+        </li>
+        <div class="images">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img  src="images/sigfpe.png">
+        </div>
+        <br>   <li><b>NZEC: Non Zero Exit Code</b>
+            <ul>
+                <p>
+In C language , it is caused by a program not having a return 0; statement in the main() function, but in C++ or Java, one of the following may be the reason.
+<ol>
+    <li>
+        Infinite Recursion or if you run out of stack memory.
+    </li>
+    <li>
+    Negative array index is accessed.
+    </li>
+    <li>
+    ArrayIndexOutOfBounds Exception.
+    </li>
+    <li>
+    StringIndexOutOfBounds Exception.
+    </li>
+</ol><br>
+NZEC: does not appear usually but it shows unexpected behaviour through weird output.
+Ref
+
+                </p>
+            </ul>
+        </li>
+    </p>
+    </div>
+
+
+    <h3>References:</h3>
+    <ul>
+        <li>
+           <a href="https://www.geeksforgeeks.org/program-error-signals/" 
+           >geeksforgeeks</a> </li>
+        <li>
+        <a href="https://www.gnu.org/software/libc/manual/html_node/Program-Error-Signals.html">
+            GNU
+        </a>    
+
+        </li>
+        <li>
+<a href="https://www.geeksforgeeks.org/runtime-errors/"> geeksforgeeks            
+</a>                     
+        </li>
+        <li>
+    <a href="https://en.wikipedia.org/wiki/Segmentation_fault#:~:text=Null%20pointer%20dereference,-In%20C%20and&text=The%20C%20standard%20does%20not,guaranteed%20by%20the%20C%20standard."> wikipedia       
+
+    </a> </li>
+    </ul>
+    </body>
+</html>

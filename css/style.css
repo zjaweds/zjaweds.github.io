@@ -94,3 +94,22 @@ p{
       offset-distance: 100%;
     }
 }
+
+.conte{
+    margin-left: 30%;
+    width: 80%;
+}
+.code {
+    margin: 30%;
+    text-align: center;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+  }
+
+.images{
+    width: 80%;
+    margin-left: 40%;
+    padding-left: 100%;
+    float: right;
+}
