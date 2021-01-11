@@ -1,0 +1,96 @@
+
+
+
+
+
+body{
+    font-family: 'Consolas', Courier, monospace;
+}
+h2{
+    font-family: consolas;
+}
+p{
+    font-family: consolas;
+}
+#WRAP{
+    background-color: #3f3e47cb;
+    border-bottom-left-radius: 0%;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    /* border-left: #d37622  5px solid;
+    border-top:  #006299 5px solid;
+    border-bottom:#004868 5px solid;
+    border-right:#ff9933 5px solid ; */
+}
+#AboutTable{
+    background-color: #ccccff;
+    border-bottom-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    /* border-left: #006299 5px solid;
+    border-top: #d37622 5px solid;
+    border-bottom:#ff9933 5px solid;
+    border-right:#004868 5px solid ; */
+}
+.INFO{
+    height: 100%;
+    position: relative;
+    text-align: justify;
+}
+.ABOUTMEINFO{
+    position: relative;
+}
+#ANIMATIONTABLE{
+    background-image: url(AboutImage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
+}
+
+.PYTHON,.SCHEME {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    motion-path: path('m60, 90 a55,55 0 1,1 30,5 Z');
+    offset-path: path('m60, 90 a55,55 0 1,1 30,5 Z');
+    offset-rotate: 0deg;
+    animation: move 12s linear  infinite  ;
+}
+
+.HTML,.REACT {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    motion-path: path('m30,5 a55,55 0 0,1 60, 90 Z');
+    offset-path: path('m30,5 a55,55 0 0,1 60, 90 Z');
+    offset-rotate: 0deg;
+    animation: move 12s linear  infinite  ;
+}
+
+.CSS,.JAVASCRIPT {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    motion-path: path('m60, 90 a55,55 0 1,1 30,5 Z');
+    offset-path: path('m60, 90 a55,55 0 1,1 30,5 Z');
+    offset-rotate: 0deg;
+    animation: move 12s linear  infinite  ;
+}
+.JAVA,.ANGULAR {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    motion-path: path('m30,5 a55,55 0 1,1 60, 90 Z');
+    offset-path: path('m30,5 a55,55 0 1,1 60, 90 Z');
+    offset-rotate: 0deg;
+    animation: move 12s linear  infinite  ;
+}
+      
+@keyframes move {
+    100% { 
+      motion-offset: 100%;
+      offset-distance: 100%;
+    }
+}
