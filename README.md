@@ -1,4 +1,29 @@
-# zjaweds.github.io
-Temporary GitHub Page for Review purpose only.
-**Published for the time being the only remarkable work here is the revolution of the icons**
-As a matter of fact final implementation gave me Euphoric moment further updates are on their way
+# Jawed Alam — Portfolio
+
+A personal portfolio built with Vite and deployed to GitHub Pages.
+
+The site includes a **Projects & Writing** page and a dedicated page with the complete competitive-coding article, its examples, illustrations, attribution, and references.
+
+## Run locally
+
+```sh
+npm install
+npm run dev
+```
+
+## Build
+
+```sh
+npm run build
+npm run preview
+```
+
+The production site is generated in `dist/`. Vite uses `/` as its base path because this repository is published as the `zjaweds.github.io` user site.
+
+Technology logos used in the animated orbit are bundled locally in `public/icons/`, so they do not depend on a third-party icon server at runtime.
+
+## Deploy to GitHub Pages
+
+The workflow in `.github/workflows/deploy.yml` builds and deploys the site when changes are pushed to `master`, or when manually started from the Actions tab. In the repository settings, set **Pages → Build and deployment → Source** to **GitHub Actions**.
+
+The contact section links to [GitHub](https://github.com/zjaweds) and [LinkedIn](https://www.linkedin.com/in/zjaweds).

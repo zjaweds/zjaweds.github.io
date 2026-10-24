@@ -1,0 +1,174 @@
+.projects-page {
+  padding-block: 94px 115px;
+}
+
+.projects-intro {
+  max-width: 780px;
+  padding-bottom: 61px;
+}
+
+.projects-intro h1 {
+  margin: 0;
+  font-size: clamp(48px, 6vw, 76px);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -4px;
+}
+
+.projects-intro h1 span {
+  color: var(--accent);
+}
+
+.projects-lede {
+  max-width: 590px;
+  margin: 24px 0 0;
+  color: var(--muted);
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.work-card {
+  min-height: 360px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 27px 30px 30px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.article-card {
+  background: linear-gradient(145deg, rgba(49, 94, 251, 0.09), rgba(255, 255, 255, 0.46) 65%);
+}
+
+.github-card {
+  background: linear-gradient(145deg, rgba(25, 32, 56, 0.06), rgba(255, 255, 255, 0.48) 70%);
+}
+
+.work-card-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.work-type,
+.work-number,
+.work-kicker {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.9px;
+}
+
+.work-number {
+  color: var(--accent);
+}
+
+.work-card-content {
+  max-width: 430px;
+  position: relative;
+  z-index: 1;
+}
+
+.work-kicker {
+  margin: 0 0 13px;
+  color: var(--accent);
+}
+
+.work-card h2 {
+  margin: 0;
+  font-size: clamp(28px, 3vw, 38px);
+  font-weight: 600;
+  letter-spacing: -1.5px;
+}
+
+.work-card-content > p:not(.work-kicker) {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.work-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  color: var(--accent);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.work-link span {
+  transition: transform 180ms ease;
+}
+
+.work-link:hover span {
+  transform: translate(3px, -3px);
+}
+
+.article-card .work-link:hover span {
+  transform: translateY(3px);
+}
+
+.work-card-mark,
+.github-mark {
+  position: absolute;
+  right: 26px;
+  bottom: 11px;
+  color: rgba(49, 94, 251, 0.09);
+  font-family: var(--mono);
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: -12px;
+  pointer-events: none;
+}
+
+.github-mark {
+  color: rgba(25, 32, 56, 0.07);
+  font-size: 88px;
+  letter-spacing: -8px;
+}
+
+@media (max-width: 720px) {
+  .projects-page {
+    padding-block: 70px 85px;
+  }
+
+  .projects-intro {
+    padding-bottom: 38px;
+  }
+
+  .projects-intro h1 {
+    font-size: clamp(43px, 11vw, 62px);
+    letter-spacing: -3px;
+  }
+
+  .projects-lede {
+    font-size: 18px;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .work-card {
+    min-height: 330px;
+    padding: 23px;
+  }
+
+  .work-card h2 {
+    font-size: 32px;
+  }
+
+}
