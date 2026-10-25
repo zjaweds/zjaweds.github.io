@@ -42,7 +42,7 @@ document.querySelector('#app').innerHTML = `
           What common judging outcomes mean, why they happen, and where to
           begin when a submission does not behave as expected.
         </p>
-        <p class="article-byline">By Jawed Alam <span aria-hidden="true">·</span> Edited by Muskan Khan</p>
+        <p class="article-byline">By Jawed Alam</p>
       </header>
 
       <div class="article-body">
@@ -186,8 +186,7 @@ int y = static_cast&lt;int&gt;(std::pow(x, 11));</code></pre>
         <section class="article-section article-references">
           <h2>Author &amp; references</h2>
           <p>
-            Written by <a href="https://github.com/zjaweds" target="_blank" rel="noreferrer">Jawed Alam</a>;
-            edited by <a href="https://github.com/Muskan-Khan" target="_blank" rel="noreferrer">Muskan Khan</a>.
+            Written by <a href="https://github.com/zjaweds" target="_blank" rel="noreferrer">Jawed Alam</a>.
           </p>
           <ul>
             <li><a href="https://www.geeksforgeeks.org/program-error-signals/" target="_blank" rel="noreferrer">GeeksforGeeks: Program Error Signals</a></li>
