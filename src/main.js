@@ -205,7 +205,7 @@ document.querySelector('#app').innerHTML = `
         <ul class="credential-list">
           <li><strong>Microsoft Azure Fundamentals</strong><span>AZ-900</span></li>
           <li><strong>AI/ML for Engineers · AWS Skill Xcelerator</strong><span>Professional learning</span></li>
-          <li><strong>SQL for Data Science · Machine Learning</strong><span>Coursework</span></li>
+          <li><strong>SQL for Data Science · Machine Learning</strong><span>Coursera</span></li>
           <li><strong>AI Dojo</strong><span>Generative AI ReAct Agent</span></li>
           <li><strong>Competitive programming</strong><span>150+ LeetCode and 200+ GeeksforGeeks problems solved</span></li>
         </ul>
