@@ -2,7 +2,7 @@
 
 A personal portfolio built with Vite and deployed to GitHub Pages.
 
-The site includes a **Projects & Writing** page and a dedicated page with the complete competitive-coding article, its examples, illustrations, attribution, and references.
+The site includes a **Projects & Writing** page, a dedicated page with the complete competitive-coding article, and a home-page résumé download. The résumé PDF is served from `public/Jawed-Alam-Resume.pdf`.
 
 ## Run locally
 
