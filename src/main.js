@@ -59,6 +59,7 @@ document.querySelector('#app').innerHTML = `
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="/projects.html">Projects</a>
+      <a href="https://zjaweds.github.io/CPRevision">CP Revision</a>
       <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
