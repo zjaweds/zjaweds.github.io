@@ -59,7 +59,6 @@ document.querySelector('#app').innerHTML = `
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="/projects.html">Projects</a>
-      <a href="https://zjaweds.github.io/CPRevision">CP Revision</a>
       <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
@@ -79,6 +78,7 @@ document.querySelector('#app').innerHTML = `
           <a class="button button-secondary" href="/Jawed-Alam-Resume.pdf" download="Jawed-Alam-Resume.pdf">
             Download Resume <span aria-hidden="true">↓</span>
           </a>
+          <a class="text-link" href="https://zjaweds.github.io/CPRevision">CP Revision <span aria-hidden="true">↗</span></a>
           <a class="text-link" href="#skills">Explore my skills <span aria-hidden="true">↓</span></a>
         </div>
         <div class="hero-meta">
